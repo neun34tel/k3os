@@ -1,0 +1,17 @@
+ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGv08vnCAFBqw3A3mYwpyWm7ArbRXcAjTzlSkK27BL8bxap1OnfHFI2q6+481XyMRbNWqXv6+waCoRxmUhazDYaapFwiGNcBvFyDu3UWSEW4jgBb+lFWtuYiXoZ/Jof5f1KXQIeeczjpxLSJjNnrRE5sHf9FEANhgWX4NF+TOfj6jDHMnS86C/fWPhmhg1nOHrAghenXhBlqTf042CcI/Jn2ka4TeK6Jrd/SOkfLnf2N4P7tlbXK39gnYY0bCr8y83SpUD5BEKsqDbVOBgGJt5lOtf8uc83Rdwxxthg7kOb0fG9wbDv2CD6B2QMPxB4isRXU5wUZ88MBlUQh70Y4y+Au2I7Zl7WUbMl0U0NcK3cL2qyHSh7uz238JQ9spMh+QNJTzePEGGleXRhrDXAw1Ljjs/JpUMYQha2ylZ5wuXHH32VQsY2U2oo+JTuP1E9Usoj+XRsqEsNSJ/0rXLexaY3p1kN3QthjRJQDWgcVwdKUGvE1NbOygbiyzjbL0QNxhslmmqwVykhceuCMgnkkBrZUxawT1L1ZTyFB8NSiJOnX2GfMxUDczbxuQuTYUHP0kO8qOfEcgz8PFVNU5hs4p7euJ6zhChbw0xaW6Su5L4bbp04EK6XVjLh9l/PkCm2YRczD34mJEynP0Zj+6C6kylad7cmW9B402ObrHlS3A1Vw== peikert@newsaktuell.de
+
+hostname: v2202110158805166242
+
+k3os:
+  data_sources:
+  - aws
+  - cdrom
+  dns_nameservers:
+  - 46.38.225.230
+  - 46.38.252.230
+  labels:
+    k3os.io/upgrade: enabled
+  k3s_args:
+  - server
+  - "--disable=traefik,local-storage"
